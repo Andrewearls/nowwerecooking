@@ -1,7 +1,9 @@
 <?php
-// var_dump($_POST);
-ini_set("SMTP","smtp.gmail.com");
-ini_set("sendmail_from","andrew@nowwerecooking");
-mail('andrew@nowwerecooking.io','Contact Request', $_POST['message']);
-header("nowwerecooking.test");
+   $to = “andrew@nowwerecooking.io“; // <– replace with your address here
+   $subject = “Test mail”;
+   $message = “Hello! This is a simple test email message.”;
+   $from = “andrew@nowwerecooking.io“;
+   $headers = “From:” . $from;
+   mail($to,$subject,$message,$headers);
+   echo “Mail Sent.”;
 ?>
