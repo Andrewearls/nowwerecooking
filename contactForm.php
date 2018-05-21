@@ -6,6 +6,6 @@
 	$msg = wordwrap($msg,70);
 
 	// send email
-	mail("andrew@nowwerecooking.io","My subject",$msg);
+	echo mail("andrew@nowwerecooking.io","My subject",$msg);
    exit("made it here");
 ?>
