@@ -1,3 +1,4 @@
 <?php
-   echo “Mail Sent.”;
+   
+   exit("made it here");
 ?>
