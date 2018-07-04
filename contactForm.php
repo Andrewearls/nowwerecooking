@@ -8,5 +8,6 @@
    mail($to,$subject,$message,$headers);
    echo "Mail Sent.";
 
-   exit("made it here");
+   header('Location: http://www.nowwerecooking.io/');
+   exit;
 ?>
